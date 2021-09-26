@@ -69,7 +69,7 @@ async def start(_, message):
 async def start(_, message):
     await luna.send_chat_action(message.chat.id, "typing")
     await sleep(2)
-    await message.reply_text("Hey , Alexandra 🤠. Made by Artificial-Dev from 🇮🇳")
+    await message.reply_text("Hey , I Am  luna 🤠. Made by Artificial-Dev from 🇮🇳")
 
 
 @luna.on_message(
@@ -88,7 +88,7 @@ async def chat(_, message):
             return
     else:
         match = re.search(
-            "[.|\n]{0,}Alexandra[.|\n]{0,}",
+            "[.|\n]{0,}Luna[.|\n]{0,}",
             message.text.strip(),
             flags=re.IGNORECASE,
         )
