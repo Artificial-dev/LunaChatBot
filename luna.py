@@ -53,7 +53,7 @@ async def type_and_send(message):
 @luna.on_message(filters.command("repo") & ~filters.edited)
 async def repo(_, message):
     await message.reply_text(
-        "[GitHub](https://github.com/thehamkercat/LunaChatBot)"
+        "[GitHub](https://github.com/Artificial-dev/LunaChatBot.git)"
         + " | [Group](t.me/PatheticProgrammers)",
         disable_web_page_preview=True,
     )
@@ -82,7 +82,7 @@ async def chat(_, message):
             return
     else:
         match = re.search(
-            "[.|\n]{0,}luna[.|\n]{0,}",
+            "[.|\n]{0,}Alexandra[.|\n]{0,}",
             message.text.strip(),
             flags=re.IGNORECASE,
         )
