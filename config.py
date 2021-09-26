@@ -14,7 +14,7 @@ if not HEROKU:
     ARQ_API_KEY = "GJRBXI-VJSVII-BKPOJT-LYMVEE-ARQ"
 # List of supported languages >>
 # https://py-googletrans.readthedocs.io/en/latest/#googletrans-languages
-    LANGUAGE = "en"
+    LANGUAGE = "mr"
 
 
 
