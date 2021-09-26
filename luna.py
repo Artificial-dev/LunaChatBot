@@ -64,6 +64,12 @@ async def start(_, message):
     await luna.send_chat_action(message.chat.id, "typing")
     await sleep(2)
     await message.reply_text("/repo - Get Repo Link")
+    
+@luna.on_message(filters.command("about") & ~filters.edited)
+async def start(_, message):
+    await luna.send_chat_action(message.chat.id, "typing")
+    await sleep(2)
+    await message.reply_text("Hey , Alexandra 🤠. Made by Artificial-Dev from 🇮🇳")
 
 
 @luna.on_message(
